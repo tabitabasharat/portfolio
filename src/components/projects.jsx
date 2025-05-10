@@ -41,7 +41,7 @@ const projects = [
     image: "/magnus.jpeg?height=300&width=500",
     tags: ["React", "Styled Components","Javascript","HTML/CSS", "MUI", "Figma"],
     liveLink: "https://magnus-webapp.vercel.app/SignIn",
-    // githubLink: "#",
+
   },
 ];
 
