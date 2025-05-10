@@ -32,7 +32,7 @@ const projects = [
     image: "/investor.jpeg?height=300&width=500",
     tags: ["React", "Styled Components","Javascript","HTML/CSS", "Figma"],
     liveLink: "https://investor-evox.vercel.app/",
-    // githubLink: "#",
+
   },
   {
     title: "Magnus",
