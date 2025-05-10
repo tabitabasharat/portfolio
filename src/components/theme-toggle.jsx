@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   // Avoid hydration mismatch
@@ -21,7 +21,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="rounded-full transition-all duration-300 hover:scale-110"
+      className="rounded-full cursor-pointer transition-all duration-300 hover:scale-110"
       aria-label="Toggle theme"
     >
       {resolvedTheme === "dark" ? (

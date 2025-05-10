@@ -65,12 +65,13 @@ export default function Navbar() {
             </motion.a>
           ))}
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-            {/* <ThemeToggle /> */}
+            <ThemeToggle />
           </motion.div>
         </nav>
 
         {/* Mobile Menu Button */}
         <div className="flex items-center md:hidden">
+           <ThemeToggle />
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="ml-2">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
